@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    -ms-user-select: none;
+}
+
+section{
+    /* width: 100%; */
+    height: 10vh;
+    /* background-image: url(image/bg.png); */
+    /* background-size: cover; */
+    background-position: center;
+}
+
+section nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 10px #089da1;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+section nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+section nav ul{
+    list-style: none;
+}
+
+section nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section nav li a{
+    text-decoration: none;
+    color: #000;
+}
+
+section nav li a:hover{
+    color: #089da1;
+}
+
+section nav .social_icon i{
+    margin: 0 5px;
+    font-size: 18px;
+}
+
+section nav .social_icon i:hover{
+    color: #089da1;
+    cursor: pointer;
+}
+/*Banner*/
+
+.banner{
+    width: 110%;
+    height: 50vh;
+    background-image: url(image/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.banner .banner_btn{
+    padding: 8px 20px;
+    background: #089da1;
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+    top: 70%;
+    left: 7%;
+}
+
+
+
+
+/*Blog*/
+
+.blog{
+    width: 110%;
+    height: auto;
+    margin: 25px 0;
+}
+
+.blog h1{
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.blog .blog_box{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.blog .blog_box .blog_card{
+    margin: 0 auto;
+    width: 450px;
+    height: auto;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.blog .blog_box .blog_card .blog_img{
+    width: 450px;
+    height: 300px;
+    overflow: hidden;
+}
+
+.blog .blog_box .blog_card .blog_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.blog .blog_box .blog_card .blog_tag{
+    padding: 20px;
+}
+
+.blog .blog_box .blog_card .blog_tag h2{
+    color: #089da1;
+}
+
+.blog .blog_box .blog_card .blog_tag p{
+    margin-top: 10px;
+    text-align: justify;
+    line-height: 22px;
+}
+
+.blog .blog_box .blog_card .blog_tag .blog_icon{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #089da1;
+    cursor: pointer;
+}
+
+
+
+
+/*Footer*/
+
+footer{
+    width: 110%;
+    background: #eaeaea;
+}
+
+footer .footer_main{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img{
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p{
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a{
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i{
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i{
+    margin: 0 5px;
+}
+
+footer .footer_main .tag .search_bar{
+    width: 230px;
+    height: 30px;
+    background: rgba(202,202,202);
+    border-radius: 25px;
+}
+
+footer .footer_main .tag .search_bar input{
+    width: 200px;
+    padding: 2px 0;
+    position: relative;
+    top: 17%;
+    left: 6%;
+    border: none;
+    outline: none;
+    font-size: 13px;
+    background: none;
+}
+
+footer .footer_main .tag .search_bar button{
+    padding: 7px 15px;
+    background: #089da1;
+    border: none;
+    margin-top: 15px;
+    border-radius: 25px;
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    color: #000;
+}
+
+footer .end span{
+    color: #089da1;
+    margin-left: 10px;
+}
